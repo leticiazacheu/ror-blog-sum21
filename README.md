@@ -1,24 +1,24 @@
-# README
+Blog
+  title
+  category
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Post
+  title
+  author
+  body: text
+  
+Blog has many post
+post belongs to a blog
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+      index
+        |
+        app (nav routes )
+        |
+  home   about  Blogs(HOC)  noMatch
+                  /\
+        BlogForm    BlogList
+                        blog
+                BlogForm    Posts (HOC)
+                        PostForm    Post List
+                                     Post
+                                  PostForm
